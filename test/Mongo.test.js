@@ -1,4 +1,4 @@
-var Mongo = require('../lib/mingo').Mongo;
+var Mongo = require('../lib/Mongo');
 
 var mongo = new Mongo('mongodb://localhost');
 var db = mongo.selectDb('test');
