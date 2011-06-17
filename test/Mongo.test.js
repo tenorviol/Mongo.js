@@ -20,3 +20,11 @@ exports.findOne = function(assert) {
     assert.done();
   });
 };
+
+exports.find = function(assert) {
+  var cursor = collection.find();
+  console.log(cursor);
+  cursor.each(function(err, doc) {
+    console.log(doc);
+  });
+};
